@@ -25,7 +25,7 @@ home_page = st.Page("pages/home.py", title="홈", default=True)
 manage_roster = st.Page("pages/01_manage_roster.py", title="명단 업로드/관리")
 manage_leave = st.Page("pages/02_leave_admin.py", title="외박 신청 관리")
 manage_program = st.Page("pages/03_program_admin.py", title="프로그램 관리")
-room_assign = st.Page("pages/05_room_assign.py", title="룸메이트 배치")
+#room_assign = st.Page("pages/05_room_assign.py", title="룸메이트 배치")
 
 # 학생용 메뉴
 apply_leave = st.Page("pages/12_apply_leave.py", title="장기외박 신청")
@@ -47,8 +47,7 @@ if st.session_state.logged_in:
         # 주메뉴 이름을 굵고 크게 하여 하위메뉴와 구분
         pg = st.navigation({
             "메인": [home_page],
-            "교사 관리자 메뉴": [ manage_roster, manage_leave, manage_program, room_assign],
-            "학생 메뉴(학생용)": [apply_leave, apply_program]
+            "교사 관리자 메뉴": [ manage_roster, manage_leave, manage_program]
         })
     else:
         #st.sidebar.markdown("#### [ 학생 모드 ]")
