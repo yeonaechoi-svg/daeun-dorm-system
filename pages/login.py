@@ -3,7 +3,6 @@ from utils_auth import get_supabase
 
 
 def login():
-    st.title("남창고등학교 대운학사 관리 시스템")
     st.header("로그인")
     st.write("학사 관리 시스템 접속을 위해 로그인해 주세요.")
 

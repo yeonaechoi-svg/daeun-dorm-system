@@ -26,7 +26,6 @@ def check_password_strength(password):
 
 
 def join_membership():
-    st.title("남창고등학교 대운학사 관리 시스템")
     st.header("회원가입")
     st.write("사용자 정보를 입력하여 계정을 생성해 주세요.")
 

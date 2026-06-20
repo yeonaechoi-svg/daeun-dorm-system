@@ -2,8 +2,6 @@
 import streamlit as st
 
 # 사이드바에서 이미 정보를 보여주고 있지만, 홈 화면 중앙에도 환영 인사를 띄워줍니다.
-st.title("남창고등학교 대운학사 관리 시스템")
-
 # 세션에서 이름과 역할을 가져옵니다. (없을 경우를 대비해 기본값 설정)
 user_name = st.session_state.get("user_name", "사용자")
 user_role = st.session_state.get("user_role", "유저")
